@@ -1,13 +1,12 @@
 package com.crisbal.maven.ex1;
 
-/**
- * Hello world!
- *
- */
-public class App 
+import com.google.gson.Gson;
+
+public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        Gson gson = new Gson();
+        System.out.println(gson.toJson("Hello World!"));
     }
 }
